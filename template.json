@@ -1,0 +1,26 @@
+{
+  "index_patterns": ["sentilo*"],
+  "settings": {
+    "number_of_shards": 2
+  },
+  "mappings": {
+    "_doc": {
+      "properties": {
+          "message": { "type": "float" },
+          "timestamp": { "type": "date" },
+          "topic": { "type": "text" },
+          "type": { "type": "keyword" },
+          "sensor": { "type": "text" },
+          "provider": { "type": "keyword" },
+          "time": { "type": "date" },
+          "publisher": { "type": "keyword" },
+          "publishedAt": { "type": "date" },
+          "publisherTenant": { "type": "keyword" },
+          "tenant": { "type": "keyword" },
+          "sender": { "type": "keyword" },
+          "component": { "type": "keyword" },
+          "sensorType": { "type": "keyword" }
+      }
+    }
+  }
+}
