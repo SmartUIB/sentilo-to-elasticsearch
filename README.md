@@ -10,12 +10,10 @@ Sentilo v1.7.0 does not match how indexes work in Elasticsearch v6.3.0. This scr
 curl -X PUT "<elasticsearch url>:<elasticsearch port>/_template/sentilo" -H 'Content-Type: application/json' -d @template.json
 ```
 
-2. Modify elasticsearch_bulk.py with Elasticsearch ip:port to send bulk data
+2. Modify elasticsearch_bulk.py with Elasticsearch url and port to send bulk data
 ```
-...
 ELASTIC_URL = # your URL goes here
 ELASTIC_PORT = # same with port
-...
 ```
 
 3. Execute `python elasticsearch_bulk.py [ <ip> <port> ]`  or modify the inner variables:
