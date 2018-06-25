@@ -15,7 +15,7 @@ ELASTIC_PORT = None
 
 class BulkHandler(BaseHTTPRequestHandler):
     def do_POST(self):
-        # get message from PUT
+        # get message from POST
         self.data_string = self.rfile.read(int(self.headers['Content-Length'])).decode('UTF-8')
         self.send_response(200)
         self.end_headers()
