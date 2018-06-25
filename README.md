@@ -33,4 +33,4 @@ at
 5. Run Sentilo
 
 
-Sentilo will now send data to the script as if it was Elasticsearch itself and Elasticsearch will receive data that data transformed.
+Sentilo will now send data to the script as if it was Elasticsearch itself and Elasticsearch will receive it transformed.
